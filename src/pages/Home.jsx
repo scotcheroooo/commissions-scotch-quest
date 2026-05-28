@@ -22,7 +22,7 @@ function HeroSection() {
       display: 'flex', flexDirection: 'column',
       justifyContent: 'center', alignItems: 'center',
       textAlign: 'center', padding: '0 2rem',
-      position: 'relative', overflow: 'hidden',
+      position: 'relative', overflow: 'hidden', paddingBottom: '100px',
     }}>
       {/* Orbs */}
       <div className="orb" style={{ width: '700px', height: '700px', background: 'radial-gradient(circle, rgba(200,120,26,0.1) 0%, transparent 70%)', top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }} />
@@ -82,7 +82,7 @@ function HeroSection() {
           fontWeight: '300', position: 'relative', zIndex: 1,
         }}
       >
-        Custom coded portfolios, blogs, shops, and more — built fast, built right, and built to be completely yours.
+        Custom coded portfolios, blogs, shops, and more. Built fast, built right, and built to be completely yours.
       </motion.p>
 
       {/* CTAs */}
@@ -109,7 +109,7 @@ function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.3, duration: 0.8 }}
-        style={{ position: 'absolute', bottom: '2.5rem', left: '50%', transform: 'translateX(-50%)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}
+        style={{ position: 'absolute', bottom: '1.75rem', left: '50%', transform: 'translateX(-50%)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', zIndex: 2 }}
       >
         <span style={{ fontSize: '10px', color: 'var(--text-3)', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: 'var(--font-display)' }}>scroll</span>
         <motion.div
@@ -250,7 +250,7 @@ function CTASection() {
             Let's make something<br /><span className="text-glow">worth showing off.</span>
           </h2>
           <p style={{ color: 'var(--text-2)', fontSize: '1rem', marginBottom: '2rem', lineHeight: '1.7', fontWeight: '300', position: 'relative', zIndex: 1 }}>
-            Choose a service and submit your request — I'll handle everything from there.
+            Choose a service and submit your request. I'll handle everything from there.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', position: 'relative', zIndex: 1 }}>
             <Link to="/services" style={{ textDecoration: 'none' }}>
